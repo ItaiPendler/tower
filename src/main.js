@@ -1,10 +1,9 @@
-import Vue from 'vue'
+import Vue from 'vue';
+import App from './App.vue';
+import Message from './components/Message.vue';
 
-import App from './App.vue'
-import router from './router'
-
-
+Vue.component('app-message', Message);
 new Vue({
-  router,
-  render: (h) => h(App)
-}).$mount('#app')
+  el: '#app',
+  render: h => h(App)
+});
